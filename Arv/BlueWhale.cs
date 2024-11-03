@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arv
+﻿namespace Arv
 {
     public class BlueWhale : Animal
     {
@@ -27,6 +21,7 @@ namespace Arv
 
         public override void InformationAbout()
         {
+            Console.WriteLine($"{Name} är en Blåval");
             base.InformationAbout();
             Console.WriteLine($"Vikt: {Weight}ton");
         }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arv
+﻿namespace Arv
 {
     public class Animal
     {
@@ -31,6 +25,7 @@ namespace Arv
 
         public void AgeUp()
         {
+            Console.WriteLine($"{Name} åldrades ett år;");
             Age += 1;
         }
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arv
+﻿namespace Arv
 {
     public class Leopard : Animal
     {
@@ -27,6 +21,11 @@ namespace Arv
 
         public override void InformationAbout()
         {
+            // Kontrollera om objektet är exakt av typen Leopard
+            if (this.GetType() == typeof(Leopard))
+            {
+                Console.WriteLine($"{Name} är en Leopard");
+            }
             base.InformationAbout();
             Console.WriteLine($"Topfart: {TopSpeed}km/h");
         }
